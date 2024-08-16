@@ -37,7 +37,7 @@
 #define MSG_ID                  0x555   //11 bit standard format ID
 #define EXAMPLE_TAG             "TWAI Self Test"
 
-static const twai_timing_config_t t_config = TWAI_TIMING_CONFIG_25KBITS();
+static const twai_timing_config_t t_config = TWAI_TIMING_CONFIG_250KBITS();
 //Filter all other IDs except MSG_ID
 static const twai_filter_config_t f_config = {.acceptance_code = (MSG_ID << 21),
                                               .acceptance_mask = ~(TWAI_STD_ID_MASK << 21),
